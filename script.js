@@ -1,11 +1,8 @@
-let btn = document.getElementById("button");
-btn.addEventListener("click", function () {
-  alert("ფორმა წარმატებით გაიგზავნა");
-});
 
-let navigationElement = document.getElementById("navbar");
-let burgerElement = document.getElementById("burgerbar");
+const burger = document.getElementById("burger");
+const navigation = document.querySelector(".navigation");
 
-burgerElement.addEventListener("click", function () {
-  navigationElement.classList.toggle("active");
+burger.addEventListener("click", function () {
+  this.classList.toggle("clicked");
+  navigation.classList.toggle("show");
 });
